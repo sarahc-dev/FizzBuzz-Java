@@ -13,6 +13,18 @@ public class FizzBuzz {
         }
     }
 
+    public StringBuilder generateSequence(Integer length) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 1; i <= length; i++) {
+            result.append(this.forNumber(i));
+
+            if (i < length) {
+                result.append(", ");
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
 
     }

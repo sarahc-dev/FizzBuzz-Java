@@ -51,4 +51,16 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz", fizzbuzz.forNumber(60));
         Assert.assertEquals("FizzBuzz", fizzbuzz.forNumber(150));
     }
+
+    @Test
+    public void testForGenerateSequence3ReturnsCorrectString() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        Assert.assertEquals("1, 2, Fizz", fizzbuzz.generateSequence(3).toString());
+    }
+
+    @Test
+    public void testForGenerateSequence15ReturnsCorrectString() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        Assert.assertEquals("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz", fizzbuzz.generateSequence(15).toString());
+    }
 }
