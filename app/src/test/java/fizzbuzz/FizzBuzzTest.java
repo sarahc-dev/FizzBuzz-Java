@@ -35,4 +35,20 @@ public class FizzBuzzTest {
         Assert.assertEquals("Fizz", fizzbuzz.forNumber(12));
         Assert.assertEquals("Fizz", fizzbuzz.forNumber(27));
     }
+
+    @Test
+    public void testForMultiple5ReturnsBuzz() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        Assert.assertEquals("Buzz", fizzbuzz.forNumber(10));
+        Assert.assertEquals("Buzz", fizzbuzz.forNumber(20));
+        Assert.assertEquals("Buzz", fizzbuzz.forNumber(100));
+    }
+
+    @Test
+    public void testForMultiple15ReturnsFizzBuzz() {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        Assert.assertEquals("FizzBuzz", fizzbuzz.forNumber(30));
+        Assert.assertEquals("FizzBuzz", fizzbuzz.forNumber(60));
+        Assert.assertEquals("FizzBuzz", fizzbuzz.forNumber(150));
+    }
 }
